@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Characters</title>
+    <style>
+        body {
+            background: url('https://wallpapers.com/images/featured/dragon-ball-4k-background-yswkzyz24mq4xnna.jpg') no-repeat center center/cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 50px;
+            border: 3px solid orange;
+        }
+        h1 {
+            color: orange;
+            text-shadow: 2px 2px 4px black;
+        }
+        .info {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        #imagem {
+            height: 430px;
+            border: 3px solid blue;
+            border-radius: 10px;
+        }
+        .input-container {
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: black;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dragon Ball Character</h1>
+        <div class="input-container">
+            <input type="number" id="characterId" placeholder="Digite o ID do personagem">
+            <button onclick="getData()">Buscar</button>
+        </div>
+        <p class="info"><strong>Nome:</strong> <span id="nomePersonagem"></span></p>
+        <p class="info"><strong>Grupo:</strong> <span id="grupo"></span></p>
+        <p class="info"><strong>Ki:</strong> <span id="ki"></span></p>
+        <p class="info"><strong>Max Ki:</strong> <span id="maxki"></span></p>
+        <p class="info"><strong>Raça:</strong> <span id="raça"></span></p>
+        <br>
+        <img src="" id="imagem">
+    </div>
+
+    <script>
+        async function getData() {
+            const characterId = document.getElementById('characterId').value || 1;
+            const url = `https://dragonball-api.com/api/characters/${characterId}`;
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Response status: ${response.status}`);
+                }
+                const json = await response.json();
+                console.log(json);
+                document.getElementById('raça').innerText = json.race;
+                document.getElementById('ki').innerText = json.ki;
+                document.getElementById('maxki').innerText = json.maxKi;
+                document.getElementById('grupo').innerText = json.affiliation;
+                document.getElementById('nomePersonagem').innerText = json.name;
+                document.getElementById('imagem').src = json.image;
+            } catch (error) {
+                console.error(error.message);
+            }
+        }
+    </script>
+</body>
+</html>
