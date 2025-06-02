@@ -1,1 +1,1 @@
-# lekyzinn.github.io
+# lekyzada.github.io
