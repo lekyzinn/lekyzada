@@ -289,7 +289,7 @@
   "42": {
     "team": "Bayern München",
     "number": 42,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
