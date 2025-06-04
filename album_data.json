@@ -835,7 +835,7 @@
   "120": {
     "team": "Porto",
     "number": 120,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
