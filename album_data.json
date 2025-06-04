@@ -282,7 +282,7 @@
   "41": {
     "team": "Bayern München",
     "number": 41,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
