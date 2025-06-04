@@ -842,7 +842,7 @@
   "121": {
     "team": "Porto",
     "number": 121,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
