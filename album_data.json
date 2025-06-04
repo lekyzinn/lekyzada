@@ -2494,7 +2494,7 @@
   "357": {
     "team": "Inter Miami",
     "number": 357,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
