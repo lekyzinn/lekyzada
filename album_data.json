@@ -611,7 +611,7 @@
   "88": {
     "team": "Borussia Dortmund",
     "number": 88,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
