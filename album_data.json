@@ -520,7 +520,7 @@
   "75": {
     "team": "Chelsea",
     "number": 75,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
