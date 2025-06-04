@@ -359,7 +359,7 @@
   "52": {
     "team": "Paris Saint-Germain",
     "number": 52,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
