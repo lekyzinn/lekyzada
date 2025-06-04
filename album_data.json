@@ -1,1 +1,3810 @@
-{}
+{
+  "1": {
+    "team": "Real Madrid",
+    "number": 1,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "2": {
+    "team": "Real Madrid",
+    "number": 2,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "3": {
+    "team": "Real Madrid",
+    "number": 3,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "4": {
+    "team": "Real Madrid",
+    "number": 4,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "5": {
+    "team": "Real Madrid",
+    "number": 5,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "6": {
+    "team": "Real Madrid",
+    "number": 6,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "7": {
+    "team": "Real Madrid",
+    "number": 7,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "8": {
+    "team": "Real Madrid",
+    "number": 8,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "9": {
+    "team": "Real Madrid",
+    "number": 9,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "10": {
+    "team": "Real Madrid",
+    "number": 10,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "11": {
+    "team": "Real Madrid",
+    "number": 11,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "12": {
+    "team": "Real Madrid",
+    "number": 12,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "13": {
+    "team": "Real Madrid",
+    "number": 13,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "14": {
+    "team": "Real Madrid",
+    "number": 14,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "15": {
+    "team": "Real Madrid",
+    "number": 15,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "16": {
+    "team": "Real Madrid",
+    "number": 16,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "17": {
+    "team": "Real Madrid",
+    "number": 17,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "18": {
+    "team": "Manchester City",
+    "number": 18,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "19": {
+    "team": "Manchester City",
+    "number": 19,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "20": {
+    "team": "Manchester City",
+    "number": 20,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "21": {
+    "team": "Manchester City",
+    "number": 21,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "22": {
+    "team": "Manchester City",
+    "number": 22,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "23": {
+    "team": "Manchester City",
+    "number": 23,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "24": {
+    "team": "Manchester City",
+    "number": 24,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "25": {
+    "team": "Manchester City",
+    "number": 25,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "26": {
+    "team": "Manchester City",
+    "number": 26,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "27": {
+    "team": "Manchester City",
+    "number": 27,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "28": {
+    "team": "Manchester City",
+    "number": 28,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "29": {
+    "team": "Manchester City",
+    "number": 29,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "30": {
+    "team": "Manchester City",
+    "number": 30,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "31": {
+    "team": "Manchester City",
+    "number": 31,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "32": {
+    "team": "Manchester City",
+    "number": 32,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "33": {
+    "team": "Manchester City",
+    "number": 33,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "34": {
+    "team": "Manchester City",
+    "number": 34,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "35": {
+    "team": "Bayern München",
+    "number": 35,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "36": {
+    "team": "Bayern München",
+    "number": 36,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "37": {
+    "team": "Bayern München",
+    "number": 37,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "38": {
+    "team": "Bayern München",
+    "number": 38,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "39": {
+    "team": "Bayern München",
+    "number": 39,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "40": {
+    "team": "Bayern München",
+    "number": 40,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "41": {
+    "team": "Bayern München",
+    "number": 41,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "42": {
+    "team": "Bayern München",
+    "number": 42,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "43": {
+    "team": "Bayern München",
+    "number": 43,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "44": {
+    "team": "Bayern München",
+    "number": 44,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "45": {
+    "team": "Bayern München",
+    "number": 45,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "46": {
+    "team": "Bayern München",
+    "number": 46,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "47": {
+    "team": "Bayern München",
+    "number": 47,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "48": {
+    "team": "Bayern München",
+    "number": 48,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "49": {
+    "team": "Bayern München",
+    "number": 49,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "50": {
+    "team": "Bayern München",
+    "number": 50,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "51": {
+    "team": "Bayern München",
+    "number": 51,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "52": {
+    "team": "Paris Saint-Germain",
+    "number": 52,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "53": {
+    "team": "Paris Saint-Germain",
+    "number": 53,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "54": {
+    "team": "Paris Saint-Germain",
+    "number": 54,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "55": {
+    "team": "Paris Saint-Germain",
+    "number": 55,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "56": {
+    "team": "Paris Saint-Germain",
+    "number": 56,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "57": {
+    "team": "Paris Saint-Germain",
+    "number": 57,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "58": {
+    "team": "Paris Saint-Germain",
+    "number": 58,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "59": {
+    "team": "Paris Saint-Germain",
+    "number": 59,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "60": {
+    "team": "Paris Saint-Germain",
+    "number": 60,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "61": {
+    "team": "Paris Saint-Germain",
+    "number": 61,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "62": {
+    "team": "Paris Saint-Germain",
+    "number": 62,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "63": {
+    "team": "Paris Saint-Germain",
+    "number": 63,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "64": {
+    "team": "Paris Saint-Germain",
+    "number": 64,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "65": {
+    "team": "Paris Saint-Germain",
+    "number": 65,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "66": {
+    "team": "Paris Saint-Germain",
+    "number": 66,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "67": {
+    "team": "Paris Saint-Germain",
+    "number": 67,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "68": {
+    "team": "Paris Saint-Germain",
+    "number": 68,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "69": {
+    "team": "Chelsea",
+    "number": 69,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "70": {
+    "team": "Chelsea",
+    "number": 70,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "71": {
+    "team": "Chelsea",
+    "number": 71,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "72": {
+    "team": "Chelsea",
+    "number": 72,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "73": {
+    "team": "Chelsea",
+    "number": 73,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "74": {
+    "team": "Chelsea",
+    "number": 74,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "75": {
+    "team": "Chelsea",
+    "number": 75,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "76": {
+    "team": "Chelsea",
+    "number": 76,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "77": {
+    "team": "Chelsea",
+    "number": 77,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "78": {
+    "team": "Chelsea",
+    "number": 78,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "79": {
+    "team": "Chelsea",
+    "number": 79,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "80": {
+    "team": "Chelsea",
+    "number": 80,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "81": {
+    "team": "Chelsea",
+    "number": 81,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "82": {
+    "team": "Chelsea",
+    "number": 82,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "83": {
+    "team": "Chelsea",
+    "number": 83,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "84": {
+    "team": "Chelsea",
+    "number": 84,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "85": {
+    "team": "Chelsea",
+    "number": 85,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "86": {
+    "team": "Borussia Dortmund",
+    "number": 86,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "87": {
+    "team": "Borussia Dortmund",
+    "number": 87,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "88": {
+    "team": "Borussia Dortmund",
+    "number": 88,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "89": {
+    "team": "Borussia Dortmund",
+    "number": 89,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "90": {
+    "team": "Borussia Dortmund",
+    "number": 90,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "91": {
+    "team": "Borussia Dortmund",
+    "number": 91,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "92": {
+    "team": "Borussia Dortmund",
+    "number": 92,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "93": {
+    "team": "Borussia Dortmund",
+    "number": 93,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "94": {
+    "team": "Borussia Dortmund",
+    "number": 94,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "95": {
+    "team": "Borussia Dortmund",
+    "number": 95,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "96": {
+    "team": "Borussia Dortmund",
+    "number": 96,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "97": {
+    "team": "Borussia Dortmund",
+    "number": 97,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "98": {
+    "team": "Borussia Dortmund",
+    "number": 98,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "99": {
+    "team": "Borussia Dortmund",
+    "number": 99,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "100": {
+    "team": "Borussia Dortmund",
+    "number": 100,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "101": {
+    "team": "Borussia Dortmund",
+    "number": 101,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "102": {
+    "team": "Borussia Dortmund",
+    "number": 102,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "103": {
+    "team": "Inter Milan",
+    "number": 103,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "104": {
+    "team": "Inter Milan",
+    "number": 104,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "105": {
+    "team": "Inter Milan",
+    "number": 105,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "106": {
+    "team": "Inter Milan",
+    "number": 106,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "107": {
+    "team": "Inter Milan",
+    "number": 107,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "108": {
+    "team": "Inter Milan",
+    "number": 108,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "109": {
+    "team": "Inter Milan",
+    "number": 109,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "110": {
+    "team": "Inter Milan",
+    "number": 110,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "111": {
+    "team": "Inter Milan",
+    "number": 111,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "112": {
+    "team": "Inter Milan",
+    "number": 112,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "113": {
+    "team": "Inter Milan",
+    "number": 113,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "114": {
+    "team": "Inter Milan",
+    "number": 114,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "115": {
+    "team": "Inter Milan",
+    "number": 115,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "116": {
+    "team": "Inter Milan",
+    "number": 116,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "117": {
+    "team": "Inter Milan",
+    "number": 117,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "118": {
+    "team": "Inter Milan",
+    "number": 118,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "119": {
+    "team": "Inter Milan",
+    "number": 119,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "120": {
+    "team": "Porto",
+    "number": 120,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "121": {
+    "team": "Porto",
+    "number": 121,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "122": {
+    "team": "Porto",
+    "number": 122,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "123": {
+    "team": "Porto",
+    "number": 123,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "124": {
+    "team": "Porto",
+    "number": 124,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "125": {
+    "team": "Porto",
+    "number": 125,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "126": {
+    "team": "Porto",
+    "number": 126,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "127": {
+    "team": "Porto",
+    "number": 127,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "128": {
+    "team": "Porto",
+    "number": 128,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "129": {
+    "team": "Porto",
+    "number": 129,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "130": {
+    "team": "Porto",
+    "number": 130,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "131": {
+    "team": "Porto",
+    "number": 131,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "132": {
+    "team": "Porto",
+    "number": 132,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "133": {
+    "team": "Porto",
+    "number": 133,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "134": {
+    "team": "Porto",
+    "number": 134,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "135": {
+    "team": "Porto",
+    "number": 135,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "136": {
+    "team": "Porto",
+    "number": 136,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "137": {
+    "team": "Atlético Madrid",
+    "number": 137,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "138": {
+    "team": "Atlético Madrid",
+    "number": 138,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "139": {
+    "team": "Atlético Madrid",
+    "number": 139,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "140": {
+    "team": "Atlético Madrid",
+    "number": 140,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "141": {
+    "team": "Atlético Madrid",
+    "number": 141,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "142": {
+    "team": "Atlético Madrid",
+    "number": 142,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "143": {
+    "team": "Atlético Madrid",
+    "number": 143,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "144": {
+    "team": "Atlético Madrid",
+    "number": 144,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "145": {
+    "team": "Atlético Madrid",
+    "number": 145,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "146": {
+    "team": "Atlético Madrid",
+    "number": 146,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "147": {
+    "team": "Atlético Madrid",
+    "number": 147,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "148": {
+    "team": "Atlético Madrid",
+    "number": 148,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "149": {
+    "team": "Atlético Madrid",
+    "number": 149,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "150": {
+    "team": "Atlético Madrid",
+    "number": 150,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "151": {
+    "team": "Atlético Madrid",
+    "number": 151,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "152": {
+    "team": "Atlético Madrid",
+    "number": 152,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "153": {
+    "team": "Atlético Madrid",
+    "number": 153,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "154": {
+    "team": "Benfica",
+    "number": 154,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "155": {
+    "team": "Benfica",
+    "number": 155,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "156": {
+    "team": "Benfica",
+    "number": 156,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "157": {
+    "team": "Benfica",
+    "number": 157,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "158": {
+    "team": "Benfica",
+    "number": 158,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "159": {
+    "team": "Benfica",
+    "number": 159,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "160": {
+    "team": "Benfica",
+    "number": 160,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "161": {
+    "team": "Benfica",
+    "number": 161,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "162": {
+    "team": "Benfica",
+    "number": 162,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "163": {
+    "team": "Benfica",
+    "number": 163,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "164": {
+    "team": "Benfica",
+    "number": 164,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "165": {
+    "team": "Benfica",
+    "number": 165,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "166": {
+    "team": "Benfica",
+    "number": 166,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "167": {
+    "team": "Benfica",
+    "number": 167,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "168": {
+    "team": "Benfica",
+    "number": 168,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "169": {
+    "team": "Benfica",
+    "number": 169,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "170": {
+    "team": "Benfica",
+    "number": 170,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "171": {
+    "team": "Juventus",
+    "number": 171,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "172": {
+    "team": "Juventus",
+    "number": 172,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "173": {
+    "team": "Juventus",
+    "number": 173,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "174": {
+    "team": "Juventus",
+    "number": 174,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "175": {
+    "team": "Juventus",
+    "number": 175,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "176": {
+    "team": "Juventus",
+    "number": 176,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "177": {
+    "team": "Juventus",
+    "number": 177,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "178": {
+    "team": "Juventus",
+    "number": 178,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "179": {
+    "team": "Juventus",
+    "number": 179,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "180": {
+    "team": "Juventus",
+    "number": 180,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "181": {
+    "team": "Juventus",
+    "number": 181,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "182": {
+    "team": "Juventus",
+    "number": 182,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "183": {
+    "team": "Juventus",
+    "number": 183,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "184": {
+    "team": "Juventus",
+    "number": 184,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "185": {
+    "team": "Juventus",
+    "number": 185,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "186": {
+    "team": "Juventus",
+    "number": 186,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "187": {
+    "team": "Juventus",
+    "number": 187,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "188": {
+    "team": "Red Bull Salzburg",
+    "number": 188,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "189": {
+    "team": "Red Bull Salzburg",
+    "number": 189,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "190": {
+    "team": "Red Bull Salzburg",
+    "number": 190,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "191": {
+    "team": "Red Bull Salzburg",
+    "number": 191,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "192": {
+    "team": "Red Bull Salzburg",
+    "number": 192,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "193": {
+    "team": "Red Bull Salzburg",
+    "number": 193,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "194": {
+    "team": "Red Bull Salzburg",
+    "number": 194,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "195": {
+    "team": "Red Bull Salzburg",
+    "number": 195,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "196": {
+    "team": "Red Bull Salzburg",
+    "number": 196,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "197": {
+    "team": "Red Bull Salzburg",
+    "number": 197,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "198": {
+    "team": "Red Bull Salzburg",
+    "number": 198,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "199": {
+    "team": "Red Bull Salzburg",
+    "number": 199,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "200": {
+    "team": "Red Bull Salzburg",
+    "number": 200,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "201": {
+    "team": "Red Bull Salzburg",
+    "number": 201,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "202": {
+    "team": "Red Bull Salzburg",
+    "number": 202,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "203": {
+    "team": "Red Bull Salzburg",
+    "number": 203,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "204": {
+    "team": "Red Bull Salzburg",
+    "number": 204,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "205": {
+    "team": "Palmeiras",
+    "number": 205,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "206": {
+    "team": "Palmeiras",
+    "number": 206,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "207": {
+    "team": "Palmeiras",
+    "number": 207,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "208": {
+    "team": "Palmeiras",
+    "number": 208,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "209": {
+    "team": "Palmeiras",
+    "number": 209,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "210": {
+    "team": "Palmeiras",
+    "number": 210,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "211": {
+    "team": "Palmeiras",
+    "number": 211,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "212": {
+    "team": "Palmeiras",
+    "number": 212,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "213": {
+    "team": "Palmeiras",
+    "number": 213,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "214": {
+    "team": "Palmeiras",
+    "number": 214,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "215": {
+    "team": "Palmeiras",
+    "number": 215,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "216": {
+    "team": "Palmeiras",
+    "number": 216,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "217": {
+    "team": "Palmeiras",
+    "number": 217,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "218": {
+    "team": "Palmeiras",
+    "number": 218,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "219": {
+    "team": "Palmeiras",
+    "number": 219,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "220": {
+    "team": "Palmeiras",
+    "number": 220,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "221": {
+    "team": "Palmeiras",
+    "number": 221,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "222": {
+    "team": "Flamengo",
+    "number": 222,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "223": {
+    "team": "Flamengo",
+    "number": 223,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "224": {
+    "team": "Flamengo",
+    "number": 224,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "225": {
+    "team": "Flamengo",
+    "number": 225,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "226": {
+    "team": "Flamengo",
+    "number": 226,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "227": {
+    "team": "Flamengo",
+    "number": 227,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "228": {
+    "team": "Flamengo",
+    "number": 228,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "229": {
+    "team": "Flamengo",
+    "number": 229,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "230": {
+    "team": "Flamengo",
+    "number": 230,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "231": {
+    "team": "Flamengo",
+    "number": 231,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "232": {
+    "team": "Flamengo",
+    "number": 232,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "233": {
+    "team": "Flamengo",
+    "number": 233,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "234": {
+    "team": "Flamengo",
+    "number": 234,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "235": {
+    "team": "Flamengo",
+    "number": 235,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "236": {
+    "team": "Flamengo",
+    "number": 236,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "237": {
+    "team": "Flamengo",
+    "number": 237,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "238": {
+    "team": "Flamengo",
+    "number": 238,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "239": {
+    "team": "Fluminense",
+    "number": 239,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "240": {
+    "team": "Fluminense",
+    "number": 240,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "241": {
+    "team": "Fluminense",
+    "number": 241,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "242": {
+    "team": "Fluminense",
+    "number": 242,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "243": {
+    "team": "Fluminense",
+    "number": 243,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "244": {
+    "team": "Fluminense",
+    "number": 244,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "245": {
+    "team": "Fluminense",
+    "number": 245,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "246": {
+    "team": "Fluminense",
+    "number": 246,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "247": {
+    "team": "Fluminense",
+    "number": 247,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "248": {
+    "team": "Fluminense",
+    "number": 248,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "249": {
+    "team": "Fluminense",
+    "number": 249,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "250": {
+    "team": "Fluminense",
+    "number": 250,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "251": {
+    "team": "Fluminense",
+    "number": 251,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "252": {
+    "team": "Fluminense",
+    "number": 252,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "253": {
+    "team": "Fluminense",
+    "number": 253,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "254": {
+    "team": "Fluminense",
+    "number": 254,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "255": {
+    "team": "Fluminense",
+    "number": 255,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "256": {
+    "team": "Botafogo",
+    "number": 256,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "257": {
+    "team": "Botafogo",
+    "number": 257,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "258": {
+    "team": "Botafogo",
+    "number": 258,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "259": {
+    "team": "Botafogo",
+    "number": 259,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "260": {
+    "team": "Botafogo",
+    "number": 260,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "261": {
+    "team": "Botafogo",
+    "number": 261,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "262": {
+    "team": "Botafogo",
+    "number": 262,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "263": {
+    "team": "Botafogo",
+    "number": 263,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "264": {
+    "team": "Botafogo",
+    "number": 264,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "265": {
+    "team": "Botafogo",
+    "number": 265,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "266": {
+    "team": "Botafogo",
+    "number": 266,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "267": {
+    "team": "Botafogo",
+    "number": 267,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "268": {
+    "team": "Botafogo",
+    "number": 268,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "269": {
+    "team": "Botafogo",
+    "number": 269,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "270": {
+    "team": "Botafogo",
+    "number": 270,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "271": {
+    "team": "Botafogo",
+    "number": 271,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "272": {
+    "team": "Botafogo",
+    "number": 272,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "273": {
+    "team": "River Plate",
+    "number": 273,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "274": {
+    "team": "River Plate",
+    "number": 274,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "275": {
+    "team": "River Plate",
+    "number": 275,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "276": {
+    "team": "River Plate",
+    "number": 276,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "277": {
+    "team": "River Plate",
+    "number": 277,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "278": {
+    "team": "River Plate",
+    "number": 278,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "279": {
+    "team": "River Plate",
+    "number": 279,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "280": {
+    "team": "River Plate",
+    "number": 280,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "281": {
+    "team": "River Plate",
+    "number": 281,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "282": {
+    "team": "River Plate",
+    "number": 282,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "283": {
+    "team": "River Plate",
+    "number": 283,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "284": {
+    "team": "River Plate",
+    "number": 284,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "285": {
+    "team": "River Plate",
+    "number": 285,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "286": {
+    "team": "River Plate",
+    "number": 286,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "287": {
+    "team": "River Plate",
+    "number": 287,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "288": {
+    "team": "River Plate",
+    "number": 288,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "289": {
+    "team": "River Plate",
+    "number": 289,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "290": {
+    "team": "Boca Juniors",
+    "number": 290,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "291": {
+    "team": "Boca Juniors",
+    "number": 291,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "292": {
+    "team": "Boca Juniors",
+    "number": 292,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "293": {
+    "team": "Boca Juniors",
+    "number": 293,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "294": {
+    "team": "Boca Juniors",
+    "number": 294,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "295": {
+    "team": "Boca Juniors",
+    "number": 295,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "296": {
+    "team": "Boca Juniors",
+    "number": 296,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "297": {
+    "team": "Boca Juniors",
+    "number": 297,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "298": {
+    "team": "Boca Juniors",
+    "number": 298,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "299": {
+    "team": "Boca Juniors",
+    "number": 299,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "300": {
+    "team": "Boca Juniors",
+    "number": 300,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "301": {
+    "team": "Boca Juniors",
+    "number": 301,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "302": {
+    "team": "Boca Juniors",
+    "number": 302,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "303": {
+    "team": "Boca Juniors",
+    "number": 303,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "304": {
+    "team": "Boca Juniors",
+    "number": 304,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "305": {
+    "team": "Boca Juniors",
+    "number": 305,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "306": {
+    "team": "Boca Juniors",
+    "number": 306,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "307": {
+    "team": "Monterrey",
+    "number": 307,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "308": {
+    "team": "Monterrey",
+    "number": 308,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "309": {
+    "team": "Monterrey",
+    "number": 309,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "310": {
+    "team": "Monterrey",
+    "number": 310,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "311": {
+    "team": "Monterrey",
+    "number": 311,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "312": {
+    "team": "Monterrey",
+    "number": 312,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "313": {
+    "team": "Monterrey",
+    "number": 313,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "314": {
+    "team": "Monterrey",
+    "number": 314,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "315": {
+    "team": "Monterrey",
+    "number": 315,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "316": {
+    "team": "Monterrey",
+    "number": 316,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "317": {
+    "team": "Monterrey",
+    "number": 317,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "318": {
+    "team": "Monterrey",
+    "number": 318,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "319": {
+    "team": "Monterrey",
+    "number": 319,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "320": {
+    "team": "Monterrey",
+    "number": 320,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "321": {
+    "team": "Monterrey",
+    "number": 321,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "322": {
+    "team": "Monterrey",
+    "number": 322,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "323": {
+    "team": "Monterrey",
+    "number": 323,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "324": {
+    "team": "Seattle Sounders",
+    "number": 324,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "325": {
+    "team": "Seattle Sounders",
+    "number": 325,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "326": {
+    "team": "Seattle Sounders",
+    "number": 326,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "327": {
+    "team": "Seattle Sounders",
+    "number": 327,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "328": {
+    "team": "Seattle Sounders",
+    "number": 328,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "329": {
+    "team": "Seattle Sounders",
+    "number": 329,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "330": {
+    "team": "Seattle Sounders",
+    "number": 330,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "331": {
+    "team": "Seattle Sounders",
+    "number": 331,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "332": {
+    "team": "Seattle Sounders",
+    "number": 332,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "333": {
+    "team": "Seattle Sounders",
+    "number": 333,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "334": {
+    "team": "Seattle Sounders",
+    "number": 334,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "335": {
+    "team": "Seattle Sounders",
+    "number": 335,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "336": {
+    "team": "Seattle Sounders",
+    "number": 336,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "337": {
+    "team": "Seattle Sounders",
+    "number": 337,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "338": {
+    "team": "Seattle Sounders",
+    "number": 338,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "339": {
+    "team": "Seattle Sounders",
+    "number": 339,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "340": {
+    "team": "Seattle Sounders",
+    "number": 340,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "341": {
+    "team": "Inter Miami",
+    "number": 341,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "342": {
+    "team": "Inter Miami",
+    "number": 342,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "343": {
+    "team": "Inter Miami",
+    "number": 343,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "344": {
+    "team": "Inter Miami",
+    "number": 344,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "345": {
+    "team": "Inter Miami",
+    "number": 345,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "346": {
+    "team": "Inter Miami",
+    "number": 346,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "347": {
+    "team": "Inter Miami",
+    "number": 347,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "348": {
+    "team": "Inter Miami",
+    "number": 348,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "349": {
+    "team": "Inter Miami",
+    "number": 349,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "350": {
+    "team": "Inter Miami",
+    "number": 350,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "351": {
+    "team": "Inter Miami",
+    "number": 351,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "352": {
+    "team": "Inter Miami",
+    "number": 352,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "353": {
+    "team": "Inter Miami",
+    "number": 353,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "354": {
+    "team": "Inter Miami",
+    "number": 354,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "355": {
+    "team": "Inter Miami",
+    "number": 355,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "356": {
+    "team": "Inter Miami",
+    "number": 356,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "357": {
+    "team": "Inter Miami",
+    "number": 357,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "358": {
+    "team": "Los Angeles FC",
+    "number": 358,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "359": {
+    "team": "Los Angeles FC",
+    "number": 359,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "360": {
+    "team": "Los Angeles FC",
+    "number": 360,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "361": {
+    "team": "Los Angeles FC",
+    "number": 361,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "362": {
+    "team": "Los Angeles FC",
+    "number": 362,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "363": {
+    "team": "Los Angeles FC",
+    "number": 363,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "364": {
+    "team": "Los Angeles FC",
+    "number": 364,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "365": {
+    "team": "Los Angeles FC",
+    "number": 365,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "366": {
+    "team": "Los Angeles FC",
+    "number": 366,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "367": {
+    "team": "Los Angeles FC",
+    "number": 367,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "368": {
+    "team": "Los Angeles FC",
+    "number": 368,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "369": {
+    "team": "Los Angeles FC",
+    "number": 369,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "370": {
+    "team": "Los Angeles FC",
+    "number": 370,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "371": {
+    "team": "Los Angeles FC",
+    "number": 371,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "372": {
+    "team": "Los Angeles FC",
+    "number": 372,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "373": {
+    "team": "Los Angeles FC",
+    "number": 373,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "374": {
+    "team": "Los Angeles FC",
+    "number": 374,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "375": {
+    "team": "Al Ahly",
+    "number": 375,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "376": {
+    "team": "Al Ahly",
+    "number": 376,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "377": {
+    "team": "Al Ahly",
+    "number": 377,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "378": {
+    "team": "Al Ahly",
+    "number": 378,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "379": {
+    "team": "Al Ahly",
+    "number": 379,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "380": {
+    "team": "Al Ahly",
+    "number": 380,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "381": {
+    "team": "Al Ahly",
+    "number": 381,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "382": {
+    "team": "Al Ahly",
+    "number": 382,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "383": {
+    "team": "Al Ahly",
+    "number": 383,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "384": {
+    "team": "Al Ahly",
+    "number": 384,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "385": {
+    "team": "Al Ahly",
+    "number": 385,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "386": {
+    "team": "Al Ahly",
+    "number": 386,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "387": {
+    "team": "Al Ahly",
+    "number": 387,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "388": {
+    "team": "Al Ahly",
+    "number": 388,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "389": {
+    "team": "Al Ahly",
+    "number": 389,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "390": {
+    "team": "Al Ahly",
+    "number": 390,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "391": {
+    "team": "Al Ahly",
+    "number": 391,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "392": {
+    "team": "Wydad Casablanca",
+    "number": 392,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "393": {
+    "team": "Wydad Casablanca",
+    "number": 393,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "394": {
+    "team": "Wydad Casablanca",
+    "number": 394,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "395": {
+    "team": "Wydad Casablanca",
+    "number": 395,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "396": {
+    "team": "Wydad Casablanca",
+    "number": 396,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "397": {
+    "team": "Wydad Casablanca",
+    "number": 397,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "398": {
+    "team": "Wydad Casablanca",
+    "number": 398,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "399": {
+    "team": "Wydad Casablanca",
+    "number": 399,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "400": {
+    "team": "Wydad Casablanca",
+    "number": 400,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "401": {
+    "team": "Wydad Casablanca",
+    "number": 401,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "402": {
+    "team": "Wydad Casablanca",
+    "number": 402,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "403": {
+    "team": "Wydad Casablanca",
+    "number": 403,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "404": {
+    "team": "Wydad Casablanca",
+    "number": 404,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "405": {
+    "team": "Wydad Casablanca",
+    "number": 405,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "406": {
+    "team": "Wydad Casablanca",
+    "number": 406,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "407": {
+    "team": "Wydad Casablanca",
+    "number": 407,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "408": {
+    "team": "Wydad Casablanca",
+    "number": 408,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "409": {
+    "team": "Mamelodi Sundowns",
+    "number": 409,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "410": {
+    "team": "Mamelodi Sundowns",
+    "number": 410,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "411": {
+    "team": "Mamelodi Sundowns",
+    "number": 411,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "412": {
+    "team": "Mamelodi Sundowns",
+    "number": 412,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "413": {
+    "team": "Mamelodi Sundowns",
+    "number": 413,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "414": {
+    "team": "Mamelodi Sundowns",
+    "number": 414,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "415": {
+    "team": "Mamelodi Sundowns",
+    "number": 415,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "416": {
+    "team": "Mamelodi Sundowns",
+    "number": 416,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "417": {
+    "team": "Mamelodi Sundowns",
+    "number": 417,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "418": {
+    "team": "Mamelodi Sundowns",
+    "number": 418,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "419": {
+    "team": "Mamelodi Sundowns",
+    "number": 419,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "420": {
+    "team": "Mamelodi Sundowns",
+    "number": 420,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "421": {
+    "team": "Mamelodi Sundowns",
+    "number": 421,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "422": {
+    "team": "Mamelodi Sundowns",
+    "number": 422,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "423": {
+    "team": "Mamelodi Sundowns",
+    "number": 423,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "424": {
+    "team": "Mamelodi Sundowns",
+    "number": 424,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "425": {
+    "team": "Mamelodi Sundowns",
+    "number": 425,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "426": {
+    "team": "Espérance de Tunis",
+    "number": 426,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "427": {
+    "team": "Espérance de Tunis",
+    "number": 427,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "428": {
+    "team": "Espérance de Tunis",
+    "number": 428,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "429": {
+    "team": "Espérance de Tunis",
+    "number": 429,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "430": {
+    "team": "Espérance de Tunis",
+    "number": 430,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "431": {
+    "team": "Espérance de Tunis",
+    "number": 431,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "432": {
+    "team": "Espérance de Tunis",
+    "number": 432,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "433": {
+    "team": "Espérance de Tunis",
+    "number": 433,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "434": {
+    "team": "Espérance de Tunis",
+    "number": 434,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "435": {
+    "team": "Espérance de Tunis",
+    "number": 435,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "436": {
+    "team": "Espérance de Tunis",
+    "number": 436,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "437": {
+    "team": "Espérance de Tunis",
+    "number": 437,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "438": {
+    "team": "Espérance de Tunis",
+    "number": 438,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "439": {
+    "team": "Espérance de Tunis",
+    "number": 439,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "440": {
+    "team": "Espérance de Tunis",
+    "number": 440,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "441": {
+    "team": "Espérance de Tunis",
+    "number": 441,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "442": {
+    "team": "Espérance de Tunis",
+    "number": 442,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "443": {
+    "team": "Al Hilal",
+    "number": 443,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "444": {
+    "team": "Al Hilal",
+    "number": 444,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "445": {
+    "team": "Al Hilal",
+    "number": 445,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "446": {
+    "team": "Al Hilal",
+    "number": 446,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "447": {
+    "team": "Al Hilal",
+    "number": 447,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "448": {
+    "team": "Al Hilal",
+    "number": 448,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "449": {
+    "team": "Al Hilal",
+    "number": 449,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "450": {
+    "team": "Al Hilal",
+    "number": 450,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "451": {
+    "team": "Al Hilal",
+    "number": 451,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "452": {
+    "team": "Al Hilal",
+    "number": 452,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "453": {
+    "team": "Al Hilal",
+    "number": 453,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "454": {
+    "team": "Al Hilal",
+    "number": 454,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "455": {
+    "team": "Al Hilal",
+    "number": 455,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "456": {
+    "team": "Al Hilal",
+    "number": 456,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "457": {
+    "team": "Al Hilal",
+    "number": 457,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "458": {
+    "team": "Al Hilal",
+    "number": 458,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "459": {
+    "team": "Al Hilal",
+    "number": 459,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "460": {
+    "team": "Urawa Red Diamonds",
+    "number": 460,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "461": {
+    "team": "Urawa Red Diamonds",
+    "number": 461,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "462": {
+    "team": "Urawa Red Diamonds",
+    "number": 462,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "463": {
+    "team": "Urawa Red Diamonds",
+    "number": 463,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "464": {
+    "team": "Urawa Red Diamonds",
+    "number": 464,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "465": {
+    "team": "Urawa Red Diamonds",
+    "number": 465,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "466": {
+    "team": "Urawa Red Diamonds",
+    "number": 466,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "467": {
+    "team": "Urawa Red Diamonds",
+    "number": 467,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "468": {
+    "team": "Urawa Red Diamonds",
+    "number": 468,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "469": {
+    "team": "Urawa Red Diamonds",
+    "number": 469,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "470": {
+    "team": "Urawa Red Diamonds",
+    "number": 470,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "471": {
+    "team": "Urawa Red Diamonds",
+    "number": 471,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "472": {
+    "team": "Urawa Red Diamonds",
+    "number": 472,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "473": {
+    "team": "Urawa Red Diamonds",
+    "number": 473,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "474": {
+    "team": "Urawa Red Diamonds",
+    "number": 474,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "475": {
+    "team": "Urawa Red Diamonds",
+    "number": 475,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "476": {
+    "team": "Urawa Red Diamonds",
+    "number": 476,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "477": {
+    "team": "Al Ain",
+    "number": 477,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "478": {
+    "team": "Al Ain",
+    "number": 478,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "479": {
+    "team": "Al Ain",
+    "number": 479,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "480": {
+    "team": "Al Ain",
+    "number": 480,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "481": {
+    "team": "Al Ain",
+    "number": 481,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "482": {
+    "team": "Al Ain",
+    "number": 482,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "483": {
+    "team": "Al Ain",
+    "number": 483,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "484": {
+    "team": "Al Ain",
+    "number": 484,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "485": {
+    "team": "Al Ain",
+    "number": 485,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "486": {
+    "team": "Al Ain",
+    "number": 486,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "487": {
+    "team": "Al Ain",
+    "number": 487,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "488": {
+    "team": "Al Ain",
+    "number": 488,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "489": {
+    "team": "Al Ain",
+    "number": 489,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "490": {
+    "team": "Al Ain",
+    "number": 490,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "491": {
+    "team": "Al Ain",
+    "number": 491,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "492": {
+    "team": "Al Ain",
+    "number": 492,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "493": {
+    "team": "Al Ain",
+    "number": 493,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "494": {
+    "team": "Ulsan Hyundai",
+    "number": 494,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "495": {
+    "team": "Ulsan Hyundai",
+    "number": 495,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "496": {
+    "team": "Ulsan Hyundai",
+    "number": 496,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "497": {
+    "team": "Ulsan Hyundai",
+    "number": 497,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "498": {
+    "team": "Ulsan Hyundai",
+    "number": 498,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "499": {
+    "team": "Ulsan Hyundai",
+    "number": 499,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "500": {
+    "team": "Ulsan Hyundai",
+    "number": 500,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "501": {
+    "team": "Ulsan Hyundai",
+    "number": 501,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "502": {
+    "team": "Ulsan Hyundai",
+    "number": 502,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "503": {
+    "team": "Ulsan Hyundai",
+    "number": 503,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "504": {
+    "team": "Ulsan Hyundai",
+    "number": 504,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "505": {
+    "team": "Ulsan Hyundai",
+    "number": 505,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "506": {
+    "team": "Ulsan Hyundai",
+    "number": 506,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "507": {
+    "team": "Ulsan Hyundai",
+    "number": 507,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "508": {
+    "team": "Ulsan Hyundai",
+    "number": 508,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "509": {
+    "team": "Ulsan Hyundai",
+    "number": 509,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "510": {
+    "team": "Ulsan Hyundai",
+    "number": 510,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "511": {
+    "team": "Auckland City",
+    "number": 511,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "512": {
+    "team": "Auckland City",
+    "number": 512,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "513": {
+    "team": "Auckland City",
+    "number": 513,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "514": {
+    "team": "Auckland City",
+    "number": 514,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "515": {
+    "team": "Auckland City",
+    "number": 515,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "516": {
+    "team": "Auckland City",
+    "number": 516,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "517": {
+    "team": "Auckland City",
+    "number": 517,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "518": {
+    "team": "Auckland City",
+    "number": 518,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "519": {
+    "team": "Auckland City",
+    "number": 519,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "520": {
+    "team": "Auckland City",
+    "number": 520,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "521": {
+    "team": "Auckland City",
+    "number": 521,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "522": {
+    "team": "Auckland City",
+    "number": 522,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "523": {
+    "team": "Auckland City",
+    "number": 523,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "524": {
+    "team": "Auckland City",
+    "number": 524,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "525": {
+    "team": "Auckland City",
+    "number": 525,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "526": {
+    "team": "Auckland City",
+    "number": 526,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "527": {
+    "team": "Auckland City",
+    "number": 527,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "528": {
+    "team": "Club León",
+    "number": 528,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Escudo"
+  },
+  "529": {
+    "team": "Club León",
+    "number": 529,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "530": {
+    "team": "Club León",
+    "number": 530,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "531": {
+    "team": "Club León",
+    "number": 531,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "532": {
+    "team": "Club León",
+    "number": 532,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "533": {
+    "team": "Club León",
+    "number": 533,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "534": {
+    "team": "Club León",
+    "number": 534,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "535": {
+    "team": "Club León",
+    "number": 535,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "536": {
+    "team": "Club León",
+    "number": 536,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "537": {
+    "team": "Club León",
+    "number": 537,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "538": {
+    "team": "Club León",
+    "number": 538,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "539": {
+    "team": "Club León",
+    "number": 539,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "540": {
+    "team": "Club León",
+    "number": 540,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "541": {
+    "team": "Club León",
+    "number": 541,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "542": {
+    "team": "Club León",
+    "number": 542,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "543": {
+    "team": "Club León",
+    "number": 543,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  },
+  "544": {
+    "team": "Club León",
+    "number": 544,
+    "collected": false,
+    "duplicates": 0,
+    "type": "Jogador"
+  }
+}
