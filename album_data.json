@@ -1430,7 +1430,7 @@
   "205": {
     "team": "Palmeiras",
     "number": 205,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
