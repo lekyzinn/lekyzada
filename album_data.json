@@ -2382,7 +2382,7 @@
   "341": {
     "team": "Inter Miami",
     "number": 341,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
