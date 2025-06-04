@@ -16,7 +16,7 @@
   "3": {
     "team": "Real Madrid",
     "number": 3,
-    "collected": true,
+    "collected": false,
     "duplicates": 0,
     "type": "Jogador"
   },
