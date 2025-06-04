@@ -555,7 +555,7 @@
   "80": {
     "team": "Chelsea",
     "number": 80,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
