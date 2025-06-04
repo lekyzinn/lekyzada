@@ -2249,7 +2249,7 @@
   "322": {
     "team": "Monterrey",
     "number": 322,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
