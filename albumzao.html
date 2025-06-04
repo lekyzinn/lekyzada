@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Álbum Mundial de Clubes 2025 - Gerenciador</title>
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        #loadingIndicator {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: none;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+
+        @keyframes slideOutRight {
+            from { transform: translateX(0); }
+            to { transform: translateX(100%); }
+        }
+
+        .sync-button {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .sync-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+        }
+
+        .connection-status {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .status-online {
+            background: #27ae60;
+            color: white;
+        }
+
+        .status-offline {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #3498db;
+            display: block;
+        }
+
+        .stat-label {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .controls {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e8ed;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #ecf0f1;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .teams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .team-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .team-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .team-flag {
+            width: 40px;
+            height: 30px;
+            border-radius: 5px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+        }
+
+        .team-info h3 {
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .team-info p {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .team-progress {
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            background: #ecf0f1;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            text-align: center;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 10px;
+        }
+
+        .card-item {
+            aspect-ratio: 1;
+            border: 2px solid #e1e8ed;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-item.collected {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            border-color: #27ae60;
+            color: white;
+        }
+
+        .card-item.duplicate {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            border-color: #f39c12;
+            color: white;
+        }
+
+        .card-number {
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .card-type {
+            font-size: 0.7em;
+            opacity: 0.8;
+            margin-top: 2px;
+        }
+
+        .duplicate-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7em;
+            font-weight: bold;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .modal-btn {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        .btn-collect {
+            background: #27ae60;
+            color: white;
+        }
+
+        .btn-collect:hover {
+            background: #219a52;
+            transform: translateY(-2px);
+        }
+
+        .btn-duplicate {
+            background: #f39c12;
+            color: white;
+        }
+
+        .btn-duplicate:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+        }
+
+        .btn-remove {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .btn-remove:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        .btn-cancel {
+            background: #95a5a6;
+            color: white;
+        }
+
+        .btn-cancel:hover {
+            background: #7f8c8d;
+            transform: translateY(-2px);
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .quantity-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background: #3498db;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quantity-btn:hover {
+            background: #2980b9;
+            transform: scale(1.1);
+        }
+
+        .quantity-display {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .teams-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cards-grid {
+                grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            }
+            
+            .filter-buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="connectionStatus" class="connection-status status-offline">● Offline</div>
+            <div id="loadingIndicator">🔄 Sincronizando...</div>
+            <h1>🏆 Mundial de Clubes FIFA 2025</h1>
+            <p>Gerencie sua coleção de figurinhas – 550 cartas para colecionar!</p>
+            <button class="sync-button" onclick="manualSync()">🔄 Sincronizar Agora</button>
+            <p style="font-size: 0.9em; color: #7f8c8d; margin-top: 10px;">
+                📱/🌐 Dados salvos no GitHub (e fallback localStorage)
+            </p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number" id="totalCollected">0</span>
+                <span class="stat-label">Cartas Coletadas</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="totalDuplicates">0</span>
+                <span class="stat-label">Cartas Repetidas</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="completionRate">0%</span>
+                <span class="stat-label">Álbum Completo</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="missingCards">550</span>
+                <span class="stat-label">Cartas Faltando</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="search-box" id="searchBox" placeholder="🔍 Buscar time ou número da carta..." />
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos os Times</button>
+                <button class="filter-btn" data-filter="collected">Com Cartas Coletadas</button>
+                <button class="filter-btn" data-filter="missing">Com Cartas Faltando</button>
+                <button class="filter-btn" data-filter="complete">Times Completos</button>
+            </div>
+        </div>
+
+        <div class="teams-grid" id="teamsGrid">
+            <!-- Times serão inseridos aqui pelo JavaScript -->
+        </div>
+    </div>
+
+    <!-- Modal para gerenciar cartas -->
+    <div id="cardModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Gerenciar Carta</h2>
+            <p id="modalInfo"></p>
+            <div class="quantity-controls" id="quantityControls" style="display: none;">
+                <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                <span class="quantity-display" id="quantityDisplay">0</span>
+                <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-btn btn-collect" onclick="collectCard()">Marcar como Coletada</button>
+                <button class="modal-btn btn-duplicate" onclick="addDuplicate()">Adicionar Repetida</button>
+                <button class="modal-btn btn-remove" onclick="removeCard()">Remover</button>
+                <button class="modal-btn btn-cancel" onclick="closeModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ─────────────────────────────────────────────────────────────────────────
+        //  DADOS FIXOS DOS TIMES (IDÊNTICO ao que você já tinha)
+        const teams = [
+            { name: "Real Madrid", country: "🇪🇸 Espanha", confederation: "UEFA", cards: 17, startCard: 1 },
+            { name: "Manchester City", country: "🏴 Inglaterra", confederation: "UEFA", cards: 17, startCard: 18 },
+            { name: "Bayern München", country: "🇩🇪 Alemanha", confederation: "UEFA", cards: 17, startCard: 35 },
+            { name: "Paris Saint-Germain", country: "🇫🇷 França", confederation: "UEFA", cards: 17, startCard: 52 },
+            { name: "Chelsea", country: "🏴 Inglaterra", confederation: "UEFA", cards: 17, startCard: 69 },
+            { name: "Borussia Dortmund", country: "🇩🇪 Alemanha", confederation: "UEFA", cards: 17, startCard: 86 },
+            { name: "Inter Milan", country: "🇮🇹 Itália", confederation: "UEFA", cards: 17, startCard: 103 },
+            { name: "Porto", country: "🇵🇹 Portugal", confederation: "UEFA", cards: 17, startCard: 120 },
+            { name: "Atlético Madrid", country: "🇪🇸 Espanha", confederation: "UEFA", cards: 17, startCard: 137 },
+            { name: "Benfica", country: "🇵🇹 Portugal", confederation: "UEFA", cards: 17, startCard: 154 },
+            { name: "Juventus", country: "🇮🇹 Itália", confederation: "UEFA", cards: 17, startCard: 171 },
+            { name: "Red Bull Salzburg", country: "🇦🇹 Áustria", confederation: "UEFA", cards: 17, startCard: 188 },
+            
+            { name: "Palmeiras", country: "🇧🇷 Brasil", confederation: "CONMEBOL", cards: 17, startCard: 205 },
+            { name: "Flamengo", country: "🇧🇷 Brasil", confederation: "CONMEBOL", cards: 17, startCard: 222 },
+            { name: "Fluminense", country: "🇧🇷 Brasil", confederation: "CONMEBOL", cards: 17, startCard: 239 },
+            { name: "Botafogo", country: "🇧🇷 Brasil", confederation: "CONMEBOL", cards: 17, startCard: 256 },
+            { name: "River Plate", country: "🇦🇷 Argentina", confederation: "CONMEBOL", cards: 17, startCard: 273 },
+            { name: "Boca Juniors", country: "🇦🇷 Argentina", confederation: "CONMEBOL", cards: 17, startCard: 290 },
+            
+            { name: "Monterrey", country: "🇲🇽 México", confederation: "CONCACAF", cards: 17, startCard: 307 },
+            { name: "Seattle Sounders", country: "🇺🇸 Estados Unidos", confederation: "CONCACAF", cards: 17, startCard: 324 },
+            { name: "Inter Miami", country: "🇺🇸 Estados Unidos", confederation: "CONCACAF", cards: 17, startCard: 341 },
+            { name: "Los Angeles FC", country: "🇺🇸 Estados Unidos", confederation: "CONCACAF", cards: 17, startCard: 358 },
+            
+            { name: "Al Ahly", country: "🇪🇬 Egito", confederation: "CAF", cards: 17, startCard: 375 },
+            { name: "Wydad Casablanca", country: "🇲🇦 Marrocos", confederation: "CAF", cards: 17, startCard: 392 },
+            { name: "Mamelodi Sundowns", country: "🇿🇦 África do Sul", confederation: "CAF", cards: 17, startCard: 409 },
+            { name: "Espérance de Tunis", country: "🇹🇳 Tunísia", confederation: "CAF", cards: 17, startCard: 426 },
+            
+            { name: "Al Hilal", country: "🇸🇦 Arábia Saudita", confederation: "AFC", cards: 17, startCard: 443 },
+            { name: "Urawa Red Diamonds", country: "🇯🇵 Japão", confederation: "AFC", cards: 17, startCard: 460 },
+            { name: "Al Ain", country: "🇦🇪 Emirados Árabes Unidos", confederation: "AFC", cards: 17, startCard: 477 },
+            { name: "Ulsan Hyundai", country: "🇰🇷 Coreia do Sul", confederation: "AFC", cards: 17, startCard: 494 },
+            
+            { name: "Auckland City", country: "🇳🇿 Nova Zelândia", confederation: "OFC", cards: 17, startCard: 511 },
+            { name: "Club León", country: "🇲🇽 México", confederation: "HOST", cards: 17, startCard: 528 }
+        ];
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Variáveis para a API do GitHub (preencha antes de rodar)
+        const GITHUB_OWNER = 'lekyzinn';
+	const GITHUB_REPO  = 'lekyzinn.github.io';
+	const GITHUB_TOKEN = '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';
+	const FILE_PATH    = 'album_data.json';
+
+
+        let currentCard   = null;
+        let albumData     = {};   // objeto que vamos popular pela API
+        let fileSha = null;
+        let isGitHubOnline = true;
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //   AUXILIAR: converte string em Base64 UTF-8
+        function toBase64(str) {
+            return btoa(unescape(encodeURIComponent(str)));
+        }
+
+        //   AUXILIAR: converte Base64 UTF-8 em string
+        function fromBase64(b64) {
+            return decodeURIComponent(escape(atob(b64)));
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  1) CARREGA album_data.json do GitHub e preenche albumData / fileSha
+        async function loadAlbumFromGitHub() {
+            try {
+                const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
+                const res = await fetch(url, {
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Authorization': `token ${GITHUB_TOKEN}`
+                    }
+                });
+                if (!res.ok) {
+                    throw new Error(`GET GitHub contents falhou: ${res.status}`);
+                }
+                const json = await res.json();
+                // json.content vem em base64 (com quebras de linha). json.sha é o SHA atual.
+                const rawB64 = json.content.replace(/\n/g, '');
+                const texto = fromBase64(rawB64);
+                albumData = JSON.parse(texto || '{}');
+                fileSha   = json.sha;
+                console.log('✅ Dados carregados do GitHub com sucesso.');
+                return true;
+            } catch (e) {
+                console.warn('⚠️ Não foi possível ler do GitHub. Fallback para localStorage.', e);
+                return false;
+            }
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  2) SALVA albumData no GitHub (faz PUT /contents/album_data.json)
+        async function saveToGitHub() {
+            try {
+                const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
+
+                // Serializa albumData → JSON → base64
+                const textoJSON = JSON.stringify(albumData, null, 2);
+                const conteudoB64 = toBase64(textoJSON);
+
+                const body = {
+                    message: `Atualiza album_data.json em ${new Date().toISOString()}`,
+                    content: conteudoB64,
+                    sha: fileSha // importantíssimo para atualizar o arquivo existente
+                };
+
+                const res = await fetch(url, {
+                    method: 'PUT',
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Authorization': `token ${GITHUB_TOKEN}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(body)
+                });
+
+                if (!res.ok) {
+                    throw new Error(`Erro ao PUT GitHub: ${res.status}`);
+                }
+                const json = await res.json();
+                fileSha = json.content.sha; // atualiza para o novo SHA retornado
+                console.log('✅ Arquivo salvo no GitHub, novo SHA:', fileSha);
+                return true;
+            } catch (e) {
+                console.warn('⚠️ Falha ao salvar no GitHub, salvando em localStorage.', e);
+                return false;
+            }
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  3) SALVAR EM localStorage, se GitHub falhar
+        function saveToLocalFallback() {
+            try {
+                localStorage.setItem('album_mundial_2025_local', JSON.stringify(albumData));
+                console.log('✅ Salvou em localStorage (fallback).');
+            } catch (e) {
+                console.error('❌ Falha ao salvar em localStorage.', e);
+            }
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Inicializa “albumData” assim que a página carrega:
+        async function initializeAlbum() {
+            // 1) tenta puxar do GitHub
+            const ok = await loadAlbumFromGitHub();
+            if (!ok) {
+                // 2) se der erro, tenta rodar o mesmo fallback antigo
+                const saved = localStorage.getItem('album_mundial_2025_local');
+                if (saved) {
+                    try {
+                        albumData = JSON.parse(saved);
+                        console.log('✅ Dados carregados do localStorage (fallback).');
+                    } catch {
+                        albumData = {};
+                    }
+                }
+            }
+
+            // 3) Se ainda estiver vazio (primeiro acesso), monta a estrutura inicial
+            if (!albumData || Object.keys(albumData).length === 0) {
+                albumData = {};
+                teams.forEach(team => {
+                    for (let i = 1; i <= team.cards; i++) {
+                        const cardNumber = team.startCard + i - 1;
+                        albumData[cardNumber] = {
+                            team: team.name,
+                            number: cardNumber,
+                            collected: false,
+                            duplicates: 0,
+                            type: i === 1 ? 'Escudo' : 'Jogador'
+                        };
+                    }
+                });
+                // Salva imediatamente no GitHub (e fallback local)
+                const escreveuGit = await saveToGitHub();
+                if (!escreveuGit) saveToLocalFallback();
+            }
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Atualiza números nas estatísticas
+        function updateStats() {
+            const total = Object.keys(albumData).length;
+            const collectedCount = Object.values(albumData).filter(c => c.collected).length;
+            const duplicatesCount = Object.values(albumData).reduce((sum, c) => sum + c.duplicates, 0);
+            const missingCount = total - collectedCount;
+            const completionRate = total > 0 ? Math.round((collectedCount / total) * 100) : 0;
+
+            document.getElementById('totalCollected').textContent = collectedCount;
+            document.getElementById('totalDuplicates').textContent = duplicatesCount;
+            document.getElementById('missingCards').textContent = missingCount;
+            document.getElementById('completionRate').textContent = completionRate + '%';
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Chama a API do GitHub para gravar e, se falhar, localStorage
+        async function saveAlbumData() {
+            updateStats();
+            const wroteGit = await saveToGitHub();
+            if (!wroteGit) saveToLocalFallback();
+            showNotification('Dados salvos! ✅', 'success');
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Renderiza as cartinhas dos times (igual ao seu código original)
+        function renderTeams(filteredTeams = teams) {
+            const teamsGrid = document.getElementById('teamsGrid');
+            teamsGrid.innerHTML = '';
+
+            filteredTeams.forEach((team) => {
+                const teamCards = [];
+                for (let i = 1; i <= team.cards; i++) {
+                    const cardNumber = team.startCard + i - 1;
+                    teamCards.push(albumData[cardNumber]);
+                }
+                const collectedCards = teamCards.filter(card => card.collected).length;
+                const completionPercentage = Math.round((collectedCards / team.cards) * 100);
+
+                const teamDiv = document.createElement('div');
+                teamDiv.className = 'team-card';
+                teamDiv.innerHTML = `
+                    <div class="team-header">
+                        <div class="team-flag">${team.country.split(' ')[0]}</div>
+                        <div class="team-info">
+                            <h3>${team.name}</h3>
+                            <p>${team.country.split(' ').slice(1).join(' ')} • ${team.confederation}</p>
+                        </div>
+                    </div>
+                    <div class="team-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${completionPercentage}%"></div>
+                        </div>
+                        <div class="progress-text">${collectedCards}/${team.cards} cartas (${completionPercentage}%)</div>
+                    </div>
+                    <div class="cards-grid">
+                        ${teamCards.map(card => `
+                            <div class="card-item ${card.collected ? 'collected' : ''} ${card.duplicates > 0 ? 'duplicate' : ''}" 
+                                 onclick="openCardModal(${card.number})">
+                                <div class="card-number">${card.number}</div>
+                                <div class="card-type">${card.type}</div>
+                                ${card.duplicates > 0 ? `<div class="duplicate-count">${card.duplicates}</div>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                teamsGrid.appendChild(teamDiv);
+            });
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Funções do Modal (idem ao anterior)
+        function openCardModal(cardNumber) {
+            currentCard = albumData[cardNumber];
+            const modal = document.getElementById('cardModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalInfo = document.getElementById('modalInfo');
+            const quantityControls = document.getElementById('quantityControls');
+            const quantityDisplay = document.getElementById('quantityDisplay');
+
+            modalTitle.textContent = `Carta #${currentCard.number} – ${currentCard.team}`;
+            modalInfo.textContent = `Tipo: ${currentCard.type}`;
+
+            if (currentCard.duplicates > 0) {
+                quantityControls.style.display = 'flex';
+                quantityDisplay.textContent = currentCard.duplicates;
+            } else {
+                quantityControls.style.display = 'none';
+            }
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('cardModal').style.display = 'none';
+            currentCard = null;
+        }
+
+        function changeQuantity(delta) {
+            if (!currentCard) return;
+            const nova = currentCard.duplicates + delta;
+            if (nova < 0) return;
+            currentCard.duplicates = nova;
+            document.getElementById('quantityDisplay').textContent = nova;
+            saveAlbumData();
+            if (currentCard.duplicates === 0) {
+                document.getElementById('quantityControls').style.display = 'none';
+            }
+        }
+
+        function collectCard() {
+            if (!currentCard) return;
+            currentCard.collected = true;
+            closeModal();
+            saveAlbumData();
+            renderTeams(getFilteredTeams());
+        }
+
+        function addDuplicate() {
+            if (!currentCard) return;
+            currentCard.duplicates += 1;
+            closeModal();
+            saveAlbumData();
+            renderTeams(getFilteredTeams());
+        }
+
+        function removeCard() {
+            if (!currentCard) return;
+            currentCard.collected = false;
+            currentCard.duplicates = 0;
+            closeModal();
+            saveAlbumData();
+            renderTeams(getFilteredTeams());
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Filtros e Busca (igual a antes)
+        function getFilteredTeams() {
+            const searchInput = document.getElementById('searchBox').value.trim().toLowerCase();
+            const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+            return teams.filter(team => {
+                const matchesSearch = team.name.toLowerCase().includes(searchInput) ||
+                                      team.country.toLowerCase().includes(searchInput) ||
+                                      (!isNaN(parseInt(searchInput)) &&
+                                       team.startCard <= parseInt(searchInput) &&
+                                       parseInt(searchInput) < team.startCard + team.cards);
+                if (!matchesSearch && searchInput !== '') return false;
+
+                const teamCards = [];
+                for (let i = 1; i <= team.cards; i++) {
+                    const cardNumber = team.startCard + i - 1;
+                    teamCards.push(albumData[cardNumber]);
+                }
+                const collectedCount = teamCards.filter(c => c.collected).length;
+                const missingCount = team.cards - collectedCount;
+
+                if (activeFilter === 'collected' && collectedCount === 0) return false;
+                if (activeFilter === 'missing' && missingCount === 0) return false;
+                if (activeFilter === 'complete' && missingCount !== 0) return false;
+                return true;
+            });
+        }
+
+        function applyFilterButtons() {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderTeams(getFilteredTeams());
+                });
+            });
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Exibe notificações “toast”
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#27ae60' : type === 'error' ? '#e74c3c' : '#3498db'};
+                color: white;
+                padding: 15px 20px;
+                border-radius: 10px;
+                z-index: 1001;
+                font-weight: bold;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                animation: slideInRight 0.3s ease;
+            `;
+            document.body.appendChild(notification);
+            setTimeout(() => {
+                notification.style.animation = 'slideOutRight 0.3s ease';
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Status de conexão (online/offline)
+        function updateConnectionStatus() {
+            const statusEl = document.getElementById('connectionStatus');
+            if (navigator.onLine) {
+                statusEl.textContent = '● Online';
+                statusEl.classList.remove('status-offline');
+                statusEl.classList.add('status-online');
+            } else {
+                statusEl.textContent = '● Offline';
+                statusEl.classList.remove('status-online');
+                statusEl.classList.add('status-offline');
+            }
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  “Sincronizar agora” – carrega do GitHub + renderiza + atualiza estatísticas
+        async function manualSync() {
+            showLoading(true);
+            const ok = await loadAlbumFromGitHub();
+            if (!ok) {
+                showNotification('Falha ao sincronizar do GitHub. Usando dados locais.', 'error');
+            }
+            renderTeams(getFilteredTeams());
+            updateStats();
+            updateConnectionStatus();
+            showNotification('Sincronização concluída!', 'success');
+            showLoading(false);
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Fechar modal clicando fora
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('cardModal');
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        window.addEventListener('online', updateConnectionStatus);
+        window.addEventListener('offline', updateConnectionStatus);
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  Quando a página carrega, inicializa tudo:
+        document.addEventListener('DOMContentLoaded', async () => {
+            updateConnectionStatus();
+            await initializeAlbum();
+            applyFilterButtons();
+
+            document.getElementById('searchBox').addEventListener('input', () => {
+                renderTeams(getFilteredTeams());
+            });
+
+            renderTeams(getFilteredTeams());
+            updateStats();
+        });
+    </script>
+</body>
+</html>
