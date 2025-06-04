@@ -975,7 +975,7 @@
   "140": {
     "team": "Atlético Madrid",
     "number": 140,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
