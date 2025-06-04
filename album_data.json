@@ -1962,7 +1962,7 @@
   "281": {
     "team": "River Plate",
     "number": 281,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
