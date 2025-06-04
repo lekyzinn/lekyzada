@@ -2263,7 +2263,7 @@
   "324": {
     "team": "Seattle Sounders",
     "number": 324,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
