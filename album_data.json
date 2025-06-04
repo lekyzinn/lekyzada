@@ -1283,7 +1283,7 @@
   "184": {
     "team": "Juventus",
     "number": 184,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
