@@ -1997,7 +1997,7 @@
   "286": {
     "team": "River Plate",
     "number": 286,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
