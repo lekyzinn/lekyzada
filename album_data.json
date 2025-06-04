@@ -1619,7 +1619,7 @@
   "232": {
     "team": "Flamengo",
     "number": 232,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
