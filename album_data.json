@@ -247,7 +247,7 @@
   "36": {
     "team": "Bayern München",
     "number": 36,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
