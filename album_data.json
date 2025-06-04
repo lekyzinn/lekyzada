@@ -3383,7 +3383,7 @@
   "484": {
     "team": "Al Ain",
     "number": 484,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
