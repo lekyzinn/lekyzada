@@ -3642,7 +3642,7 @@
   "521": {
     "team": "Auckland City",
     "number": 521,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
