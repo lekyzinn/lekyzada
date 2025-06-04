@@ -1668,7 +1668,7 @@
   "239": {
     "team": "Fluminense",
     "number": 239,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
