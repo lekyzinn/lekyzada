@@ -2186,7 +2186,7 @@
   "313": {
     "team": "Monterrey",
     "number": 313,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
