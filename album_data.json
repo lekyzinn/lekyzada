@@ -2200,7 +2200,7 @@
   "315": {
     "team": "Monterrey",
     "number": 315,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
