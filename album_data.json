@@ -870,7 +870,7 @@
   "125": {
     "team": "Porto",
     "number": 125,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
