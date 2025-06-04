@@ -1906,7 +1906,7 @@
   "273": {
     "team": "River Plate",
     "number": 273,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
