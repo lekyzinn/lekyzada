@@ -2,7 +2,7 @@
   "1": {
     "team": "Real Madrid",
     "number": 1,
-    "collected": true,
+    "collected": false,
     "duplicates": 0,
     "type": "Escudo"
   },
