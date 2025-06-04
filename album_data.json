@@ -2333,7 +2333,7 @@
   "334": {
     "team": "Seattle Sounders",
     "number": 334,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
