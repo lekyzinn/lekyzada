@@ -954,7 +954,7 @@
   "137": {
     "team": "Atlético Madrid",
     "number": 137,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
