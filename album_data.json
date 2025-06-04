@@ -716,7 +716,7 @@
   "103": {
     "team": "Inter Milan",
     "number": 103,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
