@@ -3565,7 +3565,7 @@
   "510": {
     "team": "Ulsan Hyundai",
     "number": 510,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
