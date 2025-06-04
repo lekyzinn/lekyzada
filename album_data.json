@@ -135,7 +135,7 @@
   "20": {
     "team": "Manchester City",
     "number": 20,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
