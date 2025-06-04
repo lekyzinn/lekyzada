@@ -674,7 +674,7 @@
   "97": {
     "team": "Borussia Dortmund",
     "number": 97,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
