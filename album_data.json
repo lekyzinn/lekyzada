@@ -3173,7 +3173,7 @@
   "454": {
     "team": "Al Hilal",
     "number": 454,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
