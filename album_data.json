@@ -3453,7 +3453,7 @@
   "494": {
     "team": "Ulsan Hyundai",
     "number": 494,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
