@@ -2795,7 +2795,7 @@
   "400": {
     "team": "Wydad Casablanca",
     "number": 400,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
