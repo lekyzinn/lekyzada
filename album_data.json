@@ -2179,7 +2179,7 @@
   "312": {
     "team": "Monterrey",
     "number": 312,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
