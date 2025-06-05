@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Álbum Mundial de Clubes 2025 - Gerenciador</title>
-   <style>
+    <title>Álbum Mundial de Clubes FIFA 2025 – Somente Números</title>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -483,17 +483,23 @@
 </head>
 <body>
     <div class="container">
+        <!-- ===============================
+             Cabeçalho com título e botões
+             =============================== -->
         <div class="header">
             <div id="connectionStatus" class="connection-status status-offline">● Offline</div>
             <div id="loadingIndicator">🔄 Sincronizando...</div>
             <h1>🏆 Mundial de Clubes FIFA 2025</h1>
-            <p>Gerencie sua coleção de figurinhas – 550 cartas para colecionar!</p>
+            <p>Gerencie sua coleção de figurinhas – 550 cartas numeradas!</p>
             <button class="sync-button" onclick="manualSync()">🔄 Sincronizar Agora</button>
             <p style="font-size: 0.9em; color: #7f8c8d; margin-top: 10px;">
                 📱/🌐 Dados salvos no GitHub (e fallback localStorage)
             </p>
         </div>
 
+        <!-- ===============================
+             Estatísticas gerais (coletadas, repetidas, faltando, %)
+             =============================== -->
         <div class="stats">
             <div class="stat-card">
                 <span class="stat-number" id="totalCollected">0</span>
@@ -513,26 +519,33 @@
             </div>
         </div>
 
+        <!-- ===============================
+             Controles de busca e filtro
+             =============================== -->
         <div class="controls">
-            <input type="text" class="search-box" id="searchBox" placeholder="🔍 Buscar time ou número da carta..." />
+            <input type="text" class="search-box" id="searchBox" placeholder="🔍 Buscar número da carta..." />
             <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">Todos os Times</button>
-                <button class="filter-btn" data-filter="collected">Com Cartas Coletadas</button>
-                <button class="filter-btn" data-filter="missing">Com Cartas Faltando</button>
-                <button class="filter-btn" data-filter="complete">Times Completos</button>
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="collected">Coletadas</button>
+                <button class="filter-btn" data-filter="missing">Faltando</button>
             </div>
         </div>
 
-        <div class="teams-grid" id="teamsGrid">
-            <!-- Times serão inseridos aqui pelo JavaScript -->
+        <!-- ===============================
+             Grid de todas as cartas (001 a 550)
+             =============================== -->
+        <div class="cards-grid" id="cardsGrid">
+            <!-- As cartas serão inseridas aqui via JavaScript -->
         </div>
     </div>
 
-    <!-- Modal para gerenciar cartas -->
+    <!-- ===============================
+         Modal para gerenciar cada carta
+         =============================== -->
     <div id="cardModal" class="modal">
         <div class="modal-content">
             <h2 id="modalTitle">Gerenciar Carta</h2>
-            <p id="modalInfo"></p>
+            <p class="modal-info" id="modalInfo"></p>
             <div class="quantity-controls" id="quantityControls" style="display: none;">
                 <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
                 <span class="quantity-display" id="quantityDisplay">0</span>
@@ -549,73 +562,31 @@
 
     <script>
         // ─────────────────────────────────────────────────────────────────────────
-        //  DADOS FIXOS DOS TIMES (IDÊNTICO ao que você já tinha)
-        const teams = [
-            { name: "Real Madrid", country: "🇪🇸 Espanha", confederation: "UEFA", cards: 17, startCard: 1 },
-            { name: "Manchester City", country: "🏴 Inglaterra", confederation: "UEFA", cards: 17, startCard: 18 },
-            { name: "Bayern München", country: "🇩🇪 Alemanha", confederation: "UEFA", cards: 17, startCard: 35 },
-            { name: "Paris Saint-Germain", country: "🇫🇷 França", confederation: "UEFA", cards: 17, startCard: 52 },
-            { name: "Chelsea", country: "🏴 Inglaterra", confederation: "UEFA", cards: 17, startCard: 69 },
-            { name: "Borussia Dortmund", country: "🇩🇪 Alemanha", confederation: "UEFA", cards: 17, startCard: 86 },
-            { name: "Inter Milan", country: "🇮🇹 Itália", confederation: "UEFA", cards: 17, startCard: 103 },
-            { name: "Porto", country: "🇵🇹 Portugal", confederation: "UEFA", cards: 17, startCard: 120 },
-            { name: "Atlético Madrid", country: "🇪🇸 Espanha", confederation: "UEFA", cards: 17, startCard: 137 },
-            { name: "Benfica", country: "🇵🇹 Portugal", confederation: "UEFA", cards: 17, startCard: 154 },
-            { name: "Juventus", country: "🇮🇹 Itália", confederation: "UEFA", cards: 17, startCard: 171 },
-            { name: "Red Bull Salzburg", country: "🇦🇹 Áustria", confederation: "UEFA", cards: 17, startCard: 188 },
-            
-            { name: "Palmeiras", country: "🇧🇷 Brasil", confederation: "CONMEBOL", cards: 17, startCard: 205 },
-            { name: "Flamengo", country: "🇧🇷 Brasil", confederation: "CONMEBOL", cards: 17, startCard: 222 },
-            { name: "Fluminense", country: "🇧🇷 Brasil", confederation: "CONMEBOL", cards: 17, startCard: 239 },
-            { name: "Botafogo", country: "🇧🇷 Brasil", confederation: "CONMEBOL", cards: 17, startCard: 256 },
-            { name: "River Plate", country: "🇦🇷 Argentina", confederation: "CONMEBOL", cards: 17, startCard: 273 },
-            { name: "Boca Juniors", country: "🇦🇷 Argentina", confederation: "CONMEBOL", cards: 17, startCard: 290 },
-            
-            { name: "Monterrey", country: "🇲🇽 México", confederation: "CONCACAF", cards: 17, startCard: 307 },
-            { name: "Seattle Sounders", country: "🇺🇸 Estados Unidos", confederation: "CONCACAF", cards: 17, startCard: 324 },
-            { name: "Inter Miami", country: "🇺🇸 Estados Unidos", confederation: "CONCACAF", cards: 17, startCard: 341 },
-            { name: "Los Angeles FC", country: "🇺🇸 Estados Unidos", confederation: "CONCACAF", cards: 17, startCard: 358 },
-            
-            { name: "Al Ahly", country: "🇪🇬 Egito", confederation: "CAF", cards: 17, startCard: 375 },
-            { name: "Wydad Casablanca", country: "🇲🇦 Marrocos", confederation: "CAF", cards: 17, startCard: 392 },
-            { name: "Mamelodi Sundowns", country: "🇿🇦 África do Sul", confederation: "CAF", cards: 17, startCard: 409 },
-            { name: "Espérance de Tunis", country: "🇹🇳 Tunísia", confederation: "CAF", cards: 17, startCard: 426 },
-            
-            { name: "Al Hilal", country: "🇸🇦 Arábia Saudita", confederation: "AFC", cards: 17, startCard: 443 },
-            { name: "Urawa Red Diamonds", country: "🇯🇵 Japão", confederation: "AFC", cards: 17, startCard: 460 },
-            { name: "Al Ain", country: "🇦🇪 Emirados Árabes Unidos", confederation: "AFC", cards: 17, startCard: 477 },
-            { name: "Ulsan Hyundai", country: "🇰🇷 Coreia do Sul", confederation: "AFC", cards: 17, startCard: 494 },
-            
-            { name: "Auckland City", country: "🇳🇿 Nova Zelândia", confederation: "OFC", cards: 17, startCard: 511 },
-            { name: "Club León", country: "🇲🇽 México", confederation: "HOST", cards: 17, startCard: 528 }
-        ];
+        // 1) Definição do TOTAL de cartas do álbum (550)
+        const TOTAL_CARDS = 550;
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Variáveis para a API do GitHub (preencha antes de rodar)
+        // 2) Variáveis para controle de estado e integração GitHub / localStorage
         const GITHUB_OWNER = 'lekyzinn';
-	const GITHUB_REPO  = 'lekyzinn.github.io';
-	const GITHUB_TOKEN = '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';
-	const FILE_PATH    = 'album_data.json';
+        const GITHUB_REPO  = 'lekyzinn.github.io';
+        const GITHUB_TOKEN = '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';
+        const FILE_PATH    = 'album_data.json';
 
-
-        let currentCard   = null;
-        let albumData     = {};   // objeto que vamos popular pela API
-        let fileSha = null;
-        let isGitHubOnline = true;
+        let albumData      = {};   // armazena cada carta: { number, collected, duplicates }
+        let fileSha        = null;
+        let currentCard    = null;
 
         // ─────────────────────────────────────────────────────────────────────────
-        //   AUXILIAR: converte string em Base64 UTF-8
+        //  Funções auxiliares de Base64 / UTF-8 (mesmas do original)
         function toBase64(str) {
             return btoa(unescape(encodeURIComponent(str)));
         }
-
-        //   AUXILIAR: converte Base64 UTF-8 em string
         function fromBase64(b64) {
             return decodeURIComponent(escape(atob(b64)));
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  1) CARREGA album_data.json do GitHub e preenche albumData / fileSha
+        //  1) Carrega album_data.json do GitHub e preenche albumData + fileSha
         async function loadAlbumFromGitHub() {
             try {
                 const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
@@ -625,39 +596,32 @@
                         'Authorization': `token ${GITHUB_TOKEN}`
                     }
                 });
-                if (!res.ok) {
-                    throw new Error(`GET GitHub contents falhou: ${res.status}`);
-                }
+                if (!res.ok) throw new Error(`GET GitHub contents falhou: ${res.status}`);
+
                 const json = await res.json();
-                // json.content vem em base64 (com quebras de linha). json.sha é o SHA atual.
                 const rawB64 = json.content.replace(/\n/g, '');
-                const texto = fromBase64(rawB64);
-                albumData = JSON.parse(texto || '{}');
-                fileSha   = json.sha;
-                console.log('✅ Dados carregados do GitHub com sucesso.');
+                const texto  = fromBase64(rawB64);
+                albumData    = JSON.parse(texto || '{}');
+                fileSha      = json.sha;
                 return true;
             } catch (e) {
-                console.warn('⚠️ Não foi possível ler do GitHub. Fallback para localStorage.', e);
+                console.warn('⚠️ Não foi possível ler do GitHub. Usando localStorage.', e);
                 return false;
             }
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  2) SALVA albumData no GitHub (faz PUT /contents/album_data.json)
+        //  2) Salva albumData no GitHub (PUT /contents/album_data.json)
         async function saveToGitHub() {
             try {
                 const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
-
-                // Serializa albumData → JSON → base64
-                const textoJSON = JSON.stringify(albumData, null, 2);
+                const textoJSON  = JSON.stringify(albumData, null, 2);
                 const conteudoB64 = toBase64(textoJSON);
-
                 const body = {
                     message: `Atualiza album_data.json em ${new Date().toISOString()}`,
                     content: conteudoB64,
-                    sha: fileSha // importantíssimo para atualizar o arquivo existente
+                    sha: fileSha
                 };
-
                 const res = await fetch(url, {
                     method: 'PUT',
                     headers: {
@@ -667,74 +631,62 @@
                     },
                     body: JSON.stringify(body)
                 });
-
-                if (!res.ok) {
-                    throw new Error(`Erro ao PUT GitHub: ${res.status}`);
-                }
+                if (!res.ok) throw new Error(`Erro ao PUT no GitHub: ${res.status}`);
                 const json = await res.json();
-                fileSha = json.content.sha; // atualiza para o novo SHA retornado
-                console.log('✅ Arquivo salvo no GitHub, novo SHA:', fileSha);
+                fileSha   = json.content.sha;
                 return true;
             } catch (e) {
-                console.warn('⚠️ Falha ao salvar no GitHub, salvando em localStorage.', e);
+                console.warn('⚠️ Falha ao salvar no GitHub, usando localStorage.', e);
                 return false;
             }
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  3) SALVAR EM localStorage, se GitHub falhar
+        //  3) Salva em localStorage (fallback)
         function saveToLocalFallback() {
             try {
                 localStorage.setItem('album_mundial_2025_local', JSON.stringify(albumData));
-                console.log('✅ Salvou em localStorage (fallback).');
             } catch (e) {
                 console.error('❌ Falha ao salvar em localStorage.', e);
             }
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Inicializa “albumData” assim que a página carrega:
-        async function initializeAlbum() {
-            // 1) tenta puxar do GitHub
-            const ok = await loadAlbumFromGitHub();
-            if (!ok) {
-                // 2) se der erro, tenta rodar o mesmo fallback antigo
-                const saved = localStorage.getItem('album_mundial_2025_local');
-                if (saved) {
-                    try {
-                        albumData = JSON.parse(saved);
-                        console.log('✅ Dados carregados do localStorage (fallback).');
-                    } catch {
-                        albumData = {};
-                    }
-                }
-            }
-
-            // 3) Se ainda estiver vazio (primeiro acesso), monta a estrutura inicial
-            if (!albumData || Object.keys(albumData).length === 0) {
+        // ─────────────────────────────────────────────────────────────────────────
+//  Inicializa albumData na primeira vez:
+async function initializeAlbum() {
+    const ok = await loadAlbumFromGitHub();
+    if (!ok) {
+        const saved = localStorage.getItem('album_mundial_2025_local');
+        if (saved) {
+            try {
+                albumData = JSON.parse(saved);
+            } catch {
                 albumData = {};
-                teams.forEach(team => {
-                    for (let i = 1; i <= team.cards; i++) {
-                        const cardNumber = team.startCard + i - 1;
-                        albumData[cardNumber] = {
-                            team: team.name,
-                            number: cardNumber,
-                            collected: false,
-                            duplicates: 0,
-                            type: i === 1 ? 'Escudo' : 'Jogador'
-                        };
-                    }
-                });
-                // Salva imediatamente no GitHub (e fallback local)
-                const escreveuGit = await saveToGitHub();
-                if (!escreveuGit) saveToLocalFallback();
             }
         }
+    }
+
+    // Se estiver vazio, cria as entradas 1 a 550:
+    if (!albumData || Object.keys(albumData).length === 0) {
+        albumData = {};
+        for (let i = 1; i <= TOTAL_CARDS; i++) {
+            albumData[i] = {
+                number: i,
+                collected: false,
+                duplicates: 0
+            };
+        }
+        const escreveuGit = await saveToGitHub();
+        if (!escreveuGit) saveToLocalFallback();
+    }
+}
+
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Atualiza números nas estatísticas
+        //  Atualiza estatísticas gerais na interface:
         function updateStats() {
-            const total = Object.keys(albumData).length;
+            const total = TOTAL_CARDS;
             const collectedCount = Object.values(albumData).filter(c => c.collected).length;
             const duplicatesCount = Object.values(albumData).reduce((sum, c) => sum + c.duplicates, 0);
             const missingCount = total - collectedCount;
@@ -747,7 +699,7 @@
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Chama a API do GitHub para gravar e, se falhar, localStorage
+        //  Salva albumData (tenta GitHub, se falhar usa localStorage)
         async function saveAlbumData() {
             updateStats();
             const wroteGit = await saveToGitHub();
@@ -756,63 +708,56 @@
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Renderiza as cartinhas dos times (igual ao seu código original)
-        function renderTeams(filteredTeams = teams) {
-            const teamsGrid = document.getElementById('teamsGrid');
-            teamsGrid.innerHTML = '';
+        //  Renderiza todas as cartas (001–550) conforme filtro/pesquisa
+        function renderCards() {
+            const cardsGrid = document.getElementById('cardsGrid');
+            cardsGrid.innerHTML = '';
 
-            filteredTeams.forEach((team) => {
-                const teamCards = [];
-                for (let i = 1; i <= team.cards; i++) {
-                    const cardNumber = team.startCard + i - 1;
-                    teamCards.push(albumData[cardNumber]);
+            const searchInput   = document.getElementById('searchBox').value.trim();
+            const activeFilter  = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+
+            // Para cada número de 1 a 550:
+            for (let i = 1; i <= TOTAL_CARDS; i++) {
+                const card = albumData[i];
+                if (!card) continue;
+
+                // Aplica busca por número (se digitou algo)
+                if (searchInput !== '') {
+                    const num = parseInt(searchInput, 10);
+                    if (isNaN(num) || num !== i) {
+                        // se o usuário digitou texto não numérico ou número diferente, pula
+                        continue;
+                    }
                 }
-                const collectedCards = teamCards.filter(card => card.collected).length;
-                const completionPercentage = Math.round((collectedCards / team.cards) * 100);
 
-                const teamDiv = document.createElement('div');
-                teamDiv.className = 'team-card';
-                teamDiv.innerHTML = `
-                    <div class="team-header">
-                        <div class="team-flag">${team.country.split(' ')[0]}</div>
-                        <div class="team-info">
-                            <h3>${team.name}</h3>
-                            <p>${team.country.split(' ').slice(1).join(' ')} • ${team.confederation}</p>
-                        </div>
-                    </div>
-                    <div class="team-progress">
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: ${completionPercentage}%"></div>
-                        </div>
-                        <div class="progress-text">${collectedCards}/${team.cards} cartas (${completionPercentage}%)</div>
-                    </div>
-                    <div class="cards-grid">
-                        ${teamCards.map(card => `
-                            <div class="card-item ${card.collected ? 'collected' : ''} ${card.duplicates > 0 ? 'duplicate' : ''}" 
-                                 onclick="openCardModal(${card.number})">
-                                <div class="card-number">${card.number}</div>
-                                <div class="card-type">${card.type}</div>
-                                ${card.duplicates > 0 ? `<div class="duplicate-count">${card.duplicates}</div>` : ''}
-                            </div>
-                        `).join('')}
-                    </div>
+                // Aplica filtro: all | collected | missing
+                if (activeFilter === 'collected' && !card.collected) continue;
+                if (activeFilter === 'missing' && card.collected) continue;
+
+                // Cria a div da carta
+                const cardDiv = document.createElement('div');
+                cardDiv.className = `card-item ${card.collected ? 'collected' : ''} ${card.duplicates > 0 ? 'duplicate' : ''}`;
+                cardDiv.onclick = () => openCardModal(card.number);
+                cardDiv.innerHTML = `
+                    <div class="card-number">${card.number.toString().padStart(3, '0')}</div>
+                    ${card.duplicates > 0 ? `<div class="duplicate-count">${card.duplicates}</div>` : ''}
                 `;
-                teamsGrid.appendChild(teamDiv);
-            });
+                cardsGrid.appendChild(cardDiv);
+            }
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Funções do Modal (idem ao anterior)
+        //  Modal: abrir, fechar e ações
         function openCardModal(cardNumber) {
             currentCard = albumData[cardNumber];
             const modal = document.getElementById('cardModal');
             const modalTitle = document.getElementById('modalTitle');
             const modalInfo = document.getElementById('modalInfo');
             const quantityControls = document.getElementById('quantityControls');
-            const quantityDisplay = document.getElementById('quantityDisplay');
+            const quantityDisplay  = document.getElementById('quantityDisplay');
 
-            modalTitle.textContent = `Carta #${currentCard.number} – ${currentCard.team}`;
-            modalInfo.textContent = `Tipo: ${currentCard.type}`;
+            modalTitle.textContent = `Carta #${currentCard.number.toString().padStart(3, '0')}`;
+            modalInfo.textContent  = `Status: ${currentCard.collected ? 'Coletada' : 'Não coletada'}`;
 
             if (currentCard.duplicates > 0) {
                 quantityControls.style.display = 'flex';
@@ -845,7 +790,7 @@
             currentCard.collected = true;
             closeModal();
             saveAlbumData();
-            renderTeams(getFilteredTeams());
+            renderCards();
         }
 
         function addDuplicate() {
@@ -853,7 +798,7 @@
             currentCard.duplicates += 1;
             closeModal();
             saveAlbumData();
-            renderTeams(getFilteredTeams());
+            renderCards();
         }
 
         function removeCard() {
@@ -862,50 +807,24 @@
             currentCard.duplicates = 0;
             closeModal();
             saveAlbumData();
-            renderTeams(getFilteredTeams());
+            renderCards();
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Filtros e Busca (igual a antes)
-        function getFilteredTeams() {
-            const searchInput = document.getElementById('searchBox').value.trim().toLowerCase();
-            const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
-            return teams.filter(team => {
-                const matchesSearch = team.name.toLowerCase().includes(searchInput) ||
-                                      team.country.toLowerCase().includes(searchInput) ||
-                                      (!isNaN(parseInt(searchInput)) &&
-                                       team.startCard <= parseInt(searchInput) &&
-                                       parseInt(searchInput) < team.startCard + team.cards);
-                if (!matchesSearch && searchInput !== '') return false;
-
-                const teamCards = [];
-                for (let i = 1; i <= team.cards; i++) {
-                    const cardNumber = team.startCard + i - 1;
-                    teamCards.push(albumData[cardNumber]);
-                }
-                const collectedCount = teamCards.filter(c => c.collected).length;
-                const missingCount = team.cards - collectedCount;
-
-                if (activeFilter === 'collected' && collectedCount === 0) return false;
-                if (activeFilter === 'missing' && missingCount === 0) return false;
-                if (activeFilter === 'complete' && missingCount !== 0) return false;
-                return true;
-            });
-        }
-
+        //  Configuração dos botões de filtro
         function applyFilterButtons() {
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => {
                 btn.addEventListener('click', () => {
                     buttons.forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
-                    renderTeams(getFilteredTeams());
+                    renderCards();
                 });
             });
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Exibe notificações “toast”
+        //  Exibe notificações (“toast”)
         function showNotification(message, type = 'info') {
             const notification = document.createElement('div');
             notification.className = `notification ${type}`;
@@ -920,7 +839,6 @@
                 border-radius: 10px;
                 z-index: 1001;
                 font-weight: bold;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
                 animation: slideInRight 0.3s ease;
             `;
             document.body.appendChild(notification);
@@ -931,7 +849,7 @@
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Status de conexão (online/offline)
+        //  Atualiza status de conexão
         function updateConnectionStatus() {
             const statusEl = document.getElementById('connectionStatus');
             if (navigator.onLine) {
@@ -946,14 +864,23 @@
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  “Sincronizar agora” – carrega do GitHub + renderiza + atualiza estatísticas
+        //  Mostrar / Ocultar “🔄 Sincronizando…”
+        function showLoading(show = true) {
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            if (loadingIndicator) {
+                loadingIndicator.style.display = show ? 'block' : 'none';
+            }
+        }
+
+        // ─────────────────────────────────────────────────────────────────────────
+        //  “Sincronizar agora” – recarrega do GitHub + renderiza + stats
         async function manualSync() {
             showLoading(true);
             const ok = await loadAlbumFromGitHub();
             if (!ok) {
                 showNotification('Falha ao sincronizar do GitHub. Usando dados locais.', 'error');
             }
-            renderTeams(getFilteredTeams());
+            renderCards();
             updateStats();
             updateConnectionStatus();
             showNotification('Sincronização concluída!', 'success');
@@ -961,7 +888,7 @@
         }
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Fechar modal clicando fora
+        //  Fecha modal clicando fora dele
         window.addEventListener('click', (e) => {
             const modal = document.getElementById('cardModal');
             if (e.target === modal) {
@@ -973,17 +900,17 @@
         window.addEventListener('offline', updateConnectionStatus);
 
         // ─────────────────────────────────────────────────────────────────────────
-        //  Quando a página carrega, inicializa tudo:
+        //  Ao carregar a página, inicializa tudo:
         document.addEventListener('DOMContentLoaded', async () => {
             updateConnectionStatus();
             await initializeAlbum();
             applyFilterButtons();
 
             document.getElementById('searchBox').addEventListener('input', () => {
-                renderTeams(getFilteredTeams());
+                renderCards();
             });
 
-            renderTeams(getFilteredTeams());
+            renderCards();
             updateStats();
         });
     </script>
