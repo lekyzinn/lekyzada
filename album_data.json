@@ -1087,7 +1087,7 @@
   "156": {
     "team": "Benfica",
     "number": 156,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
