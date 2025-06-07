@@ -1549,7 +1549,7 @@
   "222": {
     "team": "Flamengo",
     "number": 222,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
