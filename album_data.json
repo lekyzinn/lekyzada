@@ -3082,7 +3082,7 @@
   "441": {
     "team": "Espérance de Tunis",
     "number": 441,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
