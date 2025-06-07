@@ -2564,7 +2564,7 @@
   "367": {
     "team": "Los Angeles FC",
     "number": 367,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
