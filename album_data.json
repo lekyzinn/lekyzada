@@ -709,7 +709,7 @@
   "102": {
     "team": "Borussia Dortmund",
     "number": 102,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
