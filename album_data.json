@@ -3754,7 +3754,7 @@
   "537": {
     "team": "Club León",
     "number": 537,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
