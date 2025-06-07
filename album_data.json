@@ -457,7 +457,7 @@
   "66": {
     "team": "Paris Saint-Germain",
     "number": 66,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
