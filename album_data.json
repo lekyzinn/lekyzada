@@ -2858,7 +2858,7 @@
   "409": {
     "team": "Mamelodi Sundowns",
     "number": 409,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
