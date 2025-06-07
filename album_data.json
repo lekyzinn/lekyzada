@@ -1073,7 +1073,7 @@
   "154": {
     "team": "Benfica",
     "number": 154,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
