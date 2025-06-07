@@ -1717,7 +1717,7 @@
   "246": {
     "team": "Fluminense",
     "number": 246,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
