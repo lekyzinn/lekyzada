@@ -737,7 +737,7 @@
   "106": {
     "team": "Inter Milan",
     "number": 106,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
