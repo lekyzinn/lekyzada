@@ -3201,7 +3201,7 @@
   "458": {
     "team": "Al Hilal",
     "number": 458,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
