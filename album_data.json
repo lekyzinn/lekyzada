@@ -3439,7 +3439,7 @@
   "492": {
     "team": "Al Ain",
     "number": 492,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
