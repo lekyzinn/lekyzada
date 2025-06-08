@@ -1255,7 +1255,7 @@
   "180": {
     "team": "Juventus",
     "number": 180,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
