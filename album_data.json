@@ -919,7 +919,7 @@
   "132": {
     "team": "Porto",
     "number": 132,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
