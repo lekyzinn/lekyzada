@@ -2130,7 +2130,7 @@
   "305": {
     "team": "Boca Juniors",
     "number": 305,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
