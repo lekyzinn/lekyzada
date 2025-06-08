@@ -303,7 +303,7 @@
   "44": {
     "team": "Bayern München",
     "number": 44,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
