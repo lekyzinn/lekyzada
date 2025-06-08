@@ -576,7 +576,7 @@
   "83": {
     "team": "Chelsea",
     "number": 83,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
