@@ -3096,7 +3096,7 @@
   "443": {
     "team": "Al Hilal",
     "number": 443,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
