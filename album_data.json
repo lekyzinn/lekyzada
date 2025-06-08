@@ -3180,7 +3180,7 @@
   "455": {
     "team": "Al Hilal",
     "number": 455,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
