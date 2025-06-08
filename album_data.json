@@ -2711,7 +2711,7 @@
   "388": {
     "team": "Al Ahly",
     "number": 388,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
