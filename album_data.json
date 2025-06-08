@@ -3411,7 +3411,7 @@
   "488": {
     "team": "Al Ain",
     "number": 488,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
