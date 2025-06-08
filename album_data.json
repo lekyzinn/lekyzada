@@ -2452,7 +2452,7 @@
   "351": {
     "team": "Inter Miami",
     "number": 351,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
