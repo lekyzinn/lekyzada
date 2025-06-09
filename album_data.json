@@ -2900,7 +2900,7 @@
   "415": {
     "team": "Mamelodi Sundowns",
     "number": 415,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
