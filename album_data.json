@@ -2284,7 +2284,7 @@
   "327": {
     "team": "Seattle Sounders",
     "number": 327,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
