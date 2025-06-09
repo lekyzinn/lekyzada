@@ -1388,7 +1388,7 @@
   "199": {
     "team": "Red Bull Salzburg",
     "number": 199,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
