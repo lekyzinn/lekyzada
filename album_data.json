@@ -478,7 +478,7 @@
   "69": {
     "team": "Chelsea",
     "number": 69,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
