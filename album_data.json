@@ -3362,7 +3362,7 @@
   "481": {
     "team": "Al Ain",
     "number": 481,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
