@@ -2403,7 +2403,7 @@
   "344": {
     "team": "Inter Miami",
     "number": 344,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
