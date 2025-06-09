@@ -3089,7 +3089,7 @@
   "442": {
     "team": "Espérance de Tunis",
     "number": 442,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
