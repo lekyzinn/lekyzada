@@ -2935,7 +2935,7 @@
   "420": {
     "team": "Mamelodi Sundowns",
     "number": 420,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
