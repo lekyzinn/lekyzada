@@ -1479,7 +1479,7 @@
   "212": {
     "team": "Palmeiras",
     "number": 212,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
