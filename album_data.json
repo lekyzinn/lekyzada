@@ -240,7 +240,7 @@
   "35": {
     "team": "Bayern München",
     "number": 35,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
