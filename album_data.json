@@ -226,7 +226,7 @@
   "33": {
     "team": "Manchester City",
     "number": 33,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
