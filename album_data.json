@@ -3558,7 +3558,7 @@
   "509": {
     "team": "Ulsan Hyundai",
     "number": 509,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
