@@ -2732,7 +2732,7 @@
   "391": {
     "team": "Al Ahly",
     "number": 391,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
