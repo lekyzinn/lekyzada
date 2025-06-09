@@ -2242,7 +2242,7 @@
   "321": {
     "team": "Monterrey",
     "number": 321,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
