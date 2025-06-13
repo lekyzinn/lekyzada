@@ -100,7 +100,7 @@
   "15": {
     "team": "Real Madrid",
     "number": 15,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
