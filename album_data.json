@@ -450,7 +450,7 @@
   "65": {
     "team": "Paris Saint-Germain",
     "number": 65,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
