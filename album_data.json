@@ -191,7 +191,7 @@
   "28": {
     "team": "Manchester City",
     "number": 28,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
