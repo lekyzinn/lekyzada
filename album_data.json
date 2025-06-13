@@ -3334,7 +3334,7 @@
   "477": {
     "team": "Al Ain",
     "number": 477,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
