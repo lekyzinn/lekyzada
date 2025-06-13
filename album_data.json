@@ -3593,7 +3593,7 @@
   "514": {
     "team": "Auckland City",
     "number": 514,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
