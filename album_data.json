@@ -2823,7 +2823,7 @@
   "404": {
     "team": "Wydad Casablanca",
     "number": 404,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
