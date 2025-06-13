@@ -1626,7 +1626,7 @@
   "233": {
     "team": "Flamengo",
     "number": 233,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
