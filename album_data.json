@@ -542,7 +542,7 @@
     "team": "Chelsea",
     "number": 78,
     "collected": true,
-    "duplicates": 0,
+    "duplicates": 1,
     "type": "Jogador"
   },
   "79": {
