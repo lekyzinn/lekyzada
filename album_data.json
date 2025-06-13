@@ -800,7 +800,7 @@
   "115": {
     "team": "Inter Milan",
     "number": 115,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
