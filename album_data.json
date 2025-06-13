@@ -304,7 +304,7 @@
     "team": "Bayern München",
     "number": 44,
     "collected": true,
-    "duplicates": 0,
+    "duplicates": 1,
     "type": "Jogador"
   },
   "45": {
