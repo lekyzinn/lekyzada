@@ -401,7 +401,7 @@
   "58": {
     "team": "Paris Saint-Germain",
     "number": 58,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
