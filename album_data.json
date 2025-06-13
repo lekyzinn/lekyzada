@@ -2144,7 +2144,7 @@
   "307": {
     "team": "Monterrey",
     "number": 307,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
