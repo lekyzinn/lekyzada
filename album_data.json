@@ -2620,7 +2620,7 @@
   "375": {
     "team": "Al Ahly",
     "number": 375,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
