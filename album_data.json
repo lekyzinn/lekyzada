@@ -891,7 +891,7 @@
   "128": {
     "team": "Porto",
     "number": 128,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
