@@ -1843,7 +1843,7 @@
   "264": {
     "team": "Botafogo",
     "number": 264,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
@@ -2459,7 +2459,7 @@
   "352": {
     "team": "Inter Miami",
     "number": 352,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
