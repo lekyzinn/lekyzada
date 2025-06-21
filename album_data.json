@@ -3516,7 +3516,7 @@
   "503": {
     "team": "Ulsan Hyundai",
     "number": 503,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
