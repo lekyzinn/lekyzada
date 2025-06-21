@@ -3320,7 +3320,7 @@
   "475": {
     "team": "Urawa Red Diamonds",
     "number": 475,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
