@@ -1584,7 +1584,7 @@
   "227": {
     "team": "Flamengo",
     "number": 227,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
