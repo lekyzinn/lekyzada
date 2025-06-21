@@ -2669,7 +2669,7 @@
   "382": {
     "team": "Al Ahly",
     "number": 382,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
