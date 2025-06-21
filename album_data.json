@@ -212,7 +212,7 @@
   "31": {
     "team": "Manchester City",
     "number": 31,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
