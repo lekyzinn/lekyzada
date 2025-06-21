@@ -2872,7 +2872,7 @@
   "411": {
     "team": "Mamelodi Sundowns",
     "number": 411,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
