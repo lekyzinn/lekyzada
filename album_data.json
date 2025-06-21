@@ -1787,7 +1787,7 @@
   "256": {
     "team": "Botafogo",
     "number": 256,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
