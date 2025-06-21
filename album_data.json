@@ -940,7 +940,7 @@
   "135": {
     "team": "Porto",
     "number": 135,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
