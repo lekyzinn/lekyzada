@@ -2977,7 +2977,7 @@
   "426": {
     "team": "Espérance de Tunis",
     "number": 426,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
