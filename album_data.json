@@ -2592,7 +2592,7 @@
   "371": {
     "team": "Los Angeles FC",
     "number": 371,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
