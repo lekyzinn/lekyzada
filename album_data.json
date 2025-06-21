@@ -149,7 +149,7 @@
   "22": {
     "team": "Manchester City",
     "number": 22,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
