@@ -2774,7 +2774,7 @@
   "397": {
     "team": "Wydad Casablanca",
     "number": 397,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
