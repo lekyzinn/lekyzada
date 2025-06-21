@@ -912,7 +912,7 @@
   "131": {
     "team": "Porto",
     "number": 131,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
