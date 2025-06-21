@@ -2025,7 +2025,7 @@
   "290": {
     "team": "Boca Juniors",
     "number": 290,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Escudo"
   },
