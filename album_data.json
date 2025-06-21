@@ -2984,7 +2984,7 @@
   "427": {
     "team": "Espérance de Tunis",
     "number": 427,
-    "collected": false,
+    "collected": true,
     "duplicates": 0,
     "type": "Jogador"
   },
